@@ -43,5 +43,6 @@ public class WorkerController {
         ApiResponse apiResponse = workerService.deleteWorker(id);
         return ResponseEntity.status(apiResponse.isSuccess()
                 ? HttpStatus.ACCEPTED : HttpStatus.CONFLICT).body(apiResponse);
+        //
     }
 }
